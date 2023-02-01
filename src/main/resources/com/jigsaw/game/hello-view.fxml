@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #D8BFD8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jigsaw.game.Controller">
+    <children>
+        <AnchorPane layoutY="65.0" prefHeight="435.0" prefWidth="800.0" style="-fx-background-color: #F0FFF0;">
+            <children>
+                <Pane fx:id="pane" layoutX="57.0" layoutY="29.0" prefHeight="360.0" prefWidth="480.0" />
+                <Button layoutX="574.0" layoutY="163.0" mnemonicParsing="false" onAction="#generateNewFigure" prefHeight="92.0" prefWidth="130.0" style="-fx-background-color: #D8BFD8;" text="Generate" textFill="#420a2bf7" textOverrun="CLIP">
+                    <font>
+                        <Font name="Bernard MT Condensed" size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="26.0" layoutY="14.0" text="Jigsaw">
+            <font>
+                <Font name="Berlin Sans FB" size="45.0" />
+            </font>
+        </Label>
+        <Label fx:id="timer" layoutX="362.0" layoutY="14.0" text="timer">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+      <Button fx:id="tryAgain" layoutX="566.0" layoutY="11.0" mnemonicParsing="false" onAction="#helpMethod" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #D8BFD8; -fx-border-color: #E6E6FA;" text="Finish the game" textFill="#420a2b">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
